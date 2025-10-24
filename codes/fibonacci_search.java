@@ -1,4 +1,3 @@
-```
 public class FibonacciSearch {
     public static int fibonacciSearch(int[] arr, int x) {
         int fibMm2 = 0; // (m-2)'е число Фибоначчи
@@ -47,4 +46,3 @@ public class FibonacciSearch {
         }
     }
 }
-```
