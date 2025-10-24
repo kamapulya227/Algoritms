@@ -1,4 +1,3 @@
-```
 public class BinarySearch {
     public static int binarySearch(int[] array, int target) {
         int left = 0;
@@ -32,4 +31,5 @@ public class BinarySearch {
         }
     }
 }
-```
+
+
