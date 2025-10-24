@@ -1,4 +1,3 @@
-```
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -14,4 +13,3 @@ test_array = [64, 34, 25, 12, 22, 11, 90]
 print("Исходный массив:", test_array)
 bubble_sort(test_array)
 print("Отсортированный массив:", test_array)
-```
