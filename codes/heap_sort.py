@@ -1,4 +1,3 @@
-```
 def heapify(arr, n, i):
     largest = i   # root is the largest initially
     left = 2 * i + 1
@@ -32,4 +31,4 @@ def heap_sort(arr):
 test_array = [12, 11, 13, 5, 6, 7]
 heap_sort(test_array)
 print("Отсортированный массив:", test_array)
-```
+
