@@ -1,4 +1,3 @@
-```
 import java.util.Arrays;
 
 public class MergeSortExample {
@@ -44,4 +43,4 @@ public class MergeSortExample {
         System.out.println(Arrays.toString(array));
     }
 }
-```
+
