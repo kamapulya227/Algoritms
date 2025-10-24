@@ -1,4 +1,3 @@
-```
 include <iostream>
 using namespace std;
 // Функция сортировки выбором
@@ -39,4 +38,4 @@ int main() {
     
     return 0;
 }
-```
+
