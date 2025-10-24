@@ -1,4 +1,3 @@
-```
 def interpolation_search(arr, lo, hi, x):
     if (lo <= hi and x >= arr[lo] and x <= arr[hi]):
         pos = lo + ((hi - lo) * (x - arr[lo]) // (arr[hi] - arr[lo]))
@@ -20,4 +19,4 @@ if index != -1:
     print(f"Элемент найден на позиции: {index}")
 else:
     print("Элемент не найден")
-```
+
