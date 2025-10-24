@@ -1,4 +1,3 @@
-```
 def shell_sort(arr):
     n = len(arr)
     gap = n // 2  # Начальное расстояние
@@ -16,4 +15,3 @@ def shell_sort(arr):
 test_array = [12, 34, 54, 2, 3]
 shell_sort(test_array)
 print("Отсортированный массив:", test_array)
-```
