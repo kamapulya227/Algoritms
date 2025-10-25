@@ -1,0 +1,57 @@
+public class MergeSort {
+    public static void mergeSort(int[] arr, int left, int right) {
+        if (left < right) {
+            int mid = left + (right - left) / 2;
+            
+            // Рекурсивно сортируем левую и правую части
+            mergeSort(arr, left, mid);
+            mergeSort(arr, mid + 1, right);
+            
+            // Сливаем отсортированные части
+            merge(arr, left, mid, right);
+        }
+    }
+    
+    private static void merge(int[] arr, int left, int mid, int right) {
+        // Временные массивы для левой и правой частей
+        int[] leftArray = new int[mid - left + 1];
+        int[] rightArray = new int[right - mid];
+        
+        // Копируем данные во временные массивы
+        for (int i = 0; i < leftArray.length; i++)
+            leftArray[i] = arr[left + i];
+        for (int j = 0; j < rightArray.length; j++)
+            rightArray[j] = arr[mid + 1 + j];
+        
+        // Сливаем временные массивы обратно в arr
+        int i = 0, j = 0, k = left;
+        while (i < leftArray.length && j < rightArray.length) {
+            if (leftArray[i] <= rightArray[j]) {
+                arr[k] = leftArray[i];
+                i++;
+            } else {
+                arr[k] = rightArray[j];
+                j++;
+            }
+            k++;
+        }
+        
+        // Копируем оставшиеся элементы
+        while (i < leftArray.length) {
+            arr[k] = leftArray[i];
+            i++; k++;
+        }
+        while (j < rightArray.length) {
+            arr[k] = rightArray[j];
+            j++; k++;
+        }
+    }
+    
+    public static void main(String[] args) {
+        int[] arr = {38, 27, 43, 3, 9, 82, 10};
+        mergeSort(arr, 0, arr.length - 1);
+        
+        System.out.println("Отсортированный массив:");
+        for (int num : arr) System.out.print(num + " ");
+    }
+}
